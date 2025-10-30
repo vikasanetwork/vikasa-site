@@ -3,126 +3,163 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>VIKASA NETWORK (VIK)</title>
-  <meta name="description" content="VIKASA NETWORK — Community ERC-20 token on Polygon. Contract: 0x44567A370C556785666824D29aB7553C61cac881. Total supply 24,000,000 VIK." />
+  <title>VIKASA NETWORK (VIK) — Official</title>
+  <meta name="description" content="VIKASA NETWORK (VIK) — Community-driven ERC-20 token on Polygon (PoS). Total supply: 24,000,000 VIK. Official website, whitepaper and contract verification." />
+  <link rel="canonical" href="https://www.vikasanetwork.com/">
 
-  <!-- Favicons and Logos -->
-  <link rel="icon" type="image/png" href="logo-512.png" sizes="512x512">
-  <link rel="icon" type="image/svg+xml" href="logo-32.svg" sizes="32x32">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="logo-512.png">
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/logo-512.png" sizes="512x512">
+  <link rel="icon" type="image/svg+xml" href="/logo-32.svg" sizes="32x32">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/logo-512.png">
 
-  <!-- Open Graph / Twitter Cards -->
+  <!-- Open Graph / Twitter card -->
+  <meta property="og:site_name" content="VIKASA NETWORK">
   <meta property="og:title" content="VIKASA NETWORK (VIK)">
-  <meta property="og:description" content="Official site of VIKASA NETWORK — a community-driven ERC-20 token on Polygon. Total supply: 24,000,000 VIK.">
-  <meta property="og:image" content="https://vikasanetwork.com/logo-512.png">
+  <meta property="og:description" content="Community-driven ERC-20 token on Polygon. Total supply: 24,000,000 VIK. View contract, whitepaper and team." />
+  <meta property="og:image" content="https://www.vikasanetwork.com/logo-512.png">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://vikasanetwork.com">
+  <meta property="og:url" content="https://www.vikasanetwork.com/">
 
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@VikasaNetwork">
   <meta name="twitter:title" content="VIKASA NETWORK (VIK)">
-  <meta name="twitter:description" content="Official Polygon ERC-20 token — VIKASA NETWORK (VIK)">
-  <meta name="twitter:image" content="https://vikasanetwork.com/logo-512.png">
+  <meta name="twitter:description" content="Community-driven ERC-20 token on Polygon. Total supply: 24,000,000 VIK.">
+  <meta name="twitter:image" content="https://www.vikasanetwork.com/logo-512.png">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "VIKASA NETWORK",
+    "url": "https://www.vikasanetwork.com",
+    "logo": "https://www.vikasanetwork.com/logo-512.png",
+    "sameAs": [
+      "https://x.com/VikasaNetwork",
+      "https://www.linkedin.com/in/your-linkedin"
+    ],
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "email": "info@vikasanetwork.com",
+      "contactType": "customer support"
+    }]
+  }
+  </script>
 
   <style>
-    :root {
-      --bg:#f6f7fb;
-      --card:#fff;
-      --text:#0b1220;
-      --muted:#556;
-      --accent:#0b66ff;
-      --container:900px;
+    :root{
+      --bg:#f6f8fb; --card:#ffffff; --muted:#6b7280; --accent:#0757d1;
+      --container:980px; --radius:14px;
+      font-sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
-    body {
-      margin:0;
-      font-family:Inter,system-ui,Roboto,Arial;
-      background:var(--bg);
-      color:var(--text);
-    }
-    .wrap {
-      max-width:var(--container);
-      margin:28px auto;
-      padding:26px;
-      background:var(--card);
-      border-radius:12px;
-      box-shadow:0 8px 30px rgba(6,12,20,0.06);
-    }
-    header { display:flex; gap:16px; align-items:center; }
-    .logo {
-      width:96px; height:96px;
-      border-radius:12px;
-      object-fit:cover;
-      background:#fff;
-      padding:6px;
-      box-shadow:0 6px 20px rgba(12,20,40,0.04);
-    }
-    h1 { margin:0; font-size:26px; }
-    .subtitle { color:var(--muted); margin-top:6px; }
-    section { margin-top:20px; }
-    dl { display:grid; grid-template-columns:140px 1fr; gap:6px 14px; }
-    dt { font-weight:700; }
-    dd { margin:0; color:#333; }
-    a { color:var(--accent); text-decoration:none; }
-    .btn {
-      display:inline-block;
-      background:var(--accent);
-      color:#fff;
-      padding:10px 14px;
-      border-radius:10px;
-      text-decoration:none;
-    }
-    footer { margin-top:20px; color:#667; font-size:13px; }
-    @media (max-width:640px){ .wrap{margin:12px;padding:16px}.logo{width:72px;height:72px} }
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,Roboto,Arial;background:var(--bg);color:#0f172a;-webkit-font-smoothing:antialiased}
+    .wrap{max-width:var(--container);margin:36px auto;padding:32px;background:var(--card);border-radius:var(--radius);box-shadow:0 10px 40px rgba(9,30,66,0.06)}
+    header{display:flex;gap:20px;align-items:center}
+    .logo{width:96px;height:96px;border-radius:12px;display:block;object-fit:cover;box-shadow:0 8px 24px rgba(12,20,40,0.06);background:#fff;padding:6px}
+    h1{margin:0;font-size:24px;letter-spacing:0.2px}
+    .sub{color:var(--muted);margin-top:6px;font-size:14px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:28px;margin-top:22px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}}
+    .card{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(9,30,66,0.03)}
+    dl{display:grid;grid-template-columns:140px 1fr;gap:8px 12px;margin:0}
+    dt{font-weight:700;color:#0b1220}
+    dd{margin:0;color:#1f2937}
+    a{color:var(--accent)}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none}
+    footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+    .svg-inline{display:inline-block;vertical-align:middle;margin-right:8px}
+    .meta-row{display:flex;align-items:center;gap:12px;margin-top:8px}
   </style>
 </head>
 <body>
   <main class="wrap" role="main">
     <header>
-      <img src="logo-512.png" alt="VIKASA NETWORK Logo" class="logo" />
+      <!-- fallback to PNG; link to SVG is in head and below -->
+      <img src="/logo-512.png" alt="VIKASA NETWORK logo" class="logo" />
       <div>
-        <h1>VIKASA NETWORK <small style="font-weight:600;font-size:14px">(VIK)</small></h1>
-        <div class="subtitle">Community-driven ERC-20 token on Polygon • Total Supply: 24,000,000 VIK</div>
+        <h1>VIKASA NETWORK <small style="font-weight:600;font-size:13px"> (VIK)</small></h1>
+        <div class="sub">Community-driven ERC-20 token on Polygon • Total supply: <strong>24,000,000 VIK</strong></div>
+        <div class="meta-row">
+          <span style="font-size:13px;color:var(--muted)">Official 32×32 SVG:</span>
+          <!-- visible link + small inline SVG preview for reviewers -->
+          <object data="/logo-32.svg" type="image/svg+xml" width="32" height="32" title="Vikasa 32x32 icon" aria-label="Vikasa icon"></object>
+          <a href="/logo-32.svg" target="_blank" rel="noopener">/logo-32.svg</a>
+        </div>
       </div>
     </header>
 
-    <section aria-labelledby="svglogo">
-      <h2 id="svglogo" style="font-size:16px;margin-bottom:6px;">Official 32×32 SVG Icon</h2>
-      <!-- Embed your own SVG here for PolygonScan to read -->
-      <object data="logo-32.svg" type="image/svg+xml" width="32" height="32" aria-label="Vikasa Network Logo"></object>
-    </section>
+    <div class="grid" aria-labelledby="token-info">
+      <section>
+        <article class="card" id="token-info">
+          <h2 style="margin-top:0">Token Information</h2>
+          <dl>
+            <dt>Contract</dt>
+            <dd><a href="https://polygonscan.com/address/0x44567A370C556785666824D29aB7553C61cac881" target="_blank" rel="noopener">0x44567A370C556785666824D29aB7553C61cac881</a></dd>
 
-    <section aria-labelledby="info">
-      <h2 id="info">Token Information</h2>
-      <dl>
-        <dt>Contract</dt>
-        <dd><a href="https://polygonscan.com/address/0x44567A370C556785666824D29aB7553C61cac881" target="_blank" rel="noopener">0x44567A370C556785666824D29aB7553C61cac881</a></dd>
-        <dt>Total Supply</dt><dd>24,000,000 VIK</dd>
-        <dt>Decimals</dt><dd>18</dd>
-        <dt>Network</dt><dd>Polygon (PoS)</dd>
-        <dt>Whitepaper</dt><dd><a href="/whitepaper.pdf" target="_blank">Download Whitepaper (PDF)</a></dd>
-        <dt>Website</dt><dd><a href="https://vikasanetwork.com" target="_blank">https://vikasanetwork.com</a></dd>
-        <dt>Email</dt><dd><a href="mailto:info@vikasanetwork.com">info@vikasanetwork.com</a></dd>
-      </dl>
-    </section>
+            <dt>Total supply</dt>
+            <dd>24,000,000 VIK</dd>
 
-    <section>
-      <h2>About VIKASA</h2>
-      <p>VIKASA NETWORK (VIK) is a decentralized rewards ecosystem built on Polygon, enabling community-driven growth, staking, and governance through the VIK token.</p>
+            <dt>Decimals</dt>
+            <dd>18</dd>
 
-      <p><strong>Founder:</strong> Vijay DN — <a href="https://www.linkedin.com/in/vijaydnrao-linkedin" target="_blank">LinkedIn Profile</a></p>
+            <dt>Network</dt>
+            <dd>Polygon (PoS)</dd>
 
-      <p><strong>Official Socials:</strong></p>
-      <ul>
-        <li>X (Twitter): <a href="https://x.com/VikasaNetwork" target="_blank">@VikasaNetwork</a></li>
-      </ul>
-    </section>
+            <dt>Whitepaper</dt>
+            <dd><a href="/whitepaper.pdf" target="_blank" rel="noopener">Download Whitepaper (PDF)</a></dd>
 
-    <section>
-      <a class="btn" href="https://polygonscan.com/address/0x44567A370C556785666824D29aB7553C61cac881" target="_blank">View on PolygonScan</a>
-    </section>
+            <dt>Website</dt>
+            <dd><a href="https://www.vikasanetwork.com" target="_blank" rel="noopener">https://www.vikasanetwork.com</a></dd>
+
+            <dt>Email</dt>
+            <dd><a href="mailto:info@vikasanetwork.com">info@vikasanetwork.com</a></dd>
+          </dl>
+
+          <p style="margin-top:14px;color:var(--muted);font-size:14px">
+            Verify contract on PolygonScan and use the provided links as proof for token listing & logo updates.
+          </p>
+        </article>
+
+        <article class="card" style="margin-top:16px">
+          <h3 style="margin:0 0 8px 0">About VIKASA</h3>
+          <p style="margin:0;color:#1f2937">VIKASA NETWORK (VIK) is a decentralized rewards ecosystem built on Polygon, enabling community-driven growth, staking and governance through the VIK token. Our aim is transparency, long-term utility and community ownership.</p>
+        </article>
+
+        <article class="card" style="margin-top:16px">
+          <h3 style="margin:0 0 8px 0">Roadmap (high level)</h3>
+          <ul style="margin:0 0 0 20px;padding:0;color:#1f2937">
+            <li>Q4 2025 — Token verification, website & community launch</li>
+            <li>Q1 2026 — Staking alpha & liquidity programs</li>
+            <li>Q2 2026 — Integrations & governance DAO setup</li>
+          </ul>
+        </article>
+      </section>
+
+      <aside>
+        <div class="card" style="text-align:left">
+          <h4 style="margin-top:0">Founder</h4>
+          <p style="margin:6px 0 0 0"><strong>Vijay DN</strong></p>
+          <p style="margin:6px 0"><a href="https://www.linkedin.com/in/vijaydnrao" target="_blank" rel="noopener">LinkedIn Profile</a></p>
+          <p style="margin:6px 0;color:var(--muted);font-size:13px">Official social: <a href="https://x.com/VikasaNetwork" target="_blank" rel="noopener">@VikasaNetwork</a></p>
+          <p style="margin-top:12px"><a class="btn" href="https://polygonscan.com/address/0x44567A370C556785666824D29aB7553C61cac881" target="_blank" rel="noopener">View on PolygonScan</a></p>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h4 style="margin:0 0 8px 0">Contact & Proofs</h4>
+          <ul style="padding-left:18px;margin:0;color:#1f2937">
+            <li>Site: <a href="https://www.vikasanetwork.com" target="_blank" rel="noopener">vikasanetwork.com</a></li>
+            <li>Whitepaper: <a href="/whitepaper.pdf" target="_blank" rel="noopener">whitepaper.pdf</a></li>
+            <li>Pinned tweet: <a href="https://x.com/VikasaNetwork" target="_blank" rel="noopener">Twitter</a></li>
+            <li>Deployer wallet: available on PolygonScan</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
 
     <footer>
-      <p>© 2025 VIKASA NETWORK — All rights reserved. Published October 2025.</p>
+      <p>© VIKASA NETWORK — Contract: 0x44567A370C556785666824D29aB7553C61cac881 • Published October 2025</p>
     </footer>
   </main>
 </body>
