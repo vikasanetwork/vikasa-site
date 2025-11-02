@@ -7,13 +7,12 @@
   <meta name="description" content="VIKASA NETWORK (VIK) — A decentralized rewards ecosystem built on Polygon (PoS). Transparent tokenomics, staking, governance, and roadmap for sustainable growth." />
   <link rel="canonical" href="https://www.vikasanetwork.com/">
 
-  <!-- Favicons -->
+  <!-- Favicons and Meta Tags remain the same -->
   <link rel="icon" type="image/png" href="/logo-512.png" sizes="512x512">
   <link rel="icon" type="image/svg+xml" href="/logo-32.svg" sizes="32x32">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="/logo-512.png">
 
-  <!-- Social preview -->
   <meta property="og:title" content="VIKASA NETWORK (VIK)">
   <meta property="og:description" content="Community-driven ERC-20 token on Polygon. Decentralized rewards, staking, and governance ecosystem.">
   <meta property="og:image" content="https://www.vikasanetwork.com/logo-512.png">
@@ -22,15 +21,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* --- Premium Dark Theme Variables --- */
+    /* --- Professional Obsidian/Neon Theme Variables (New Aesthetic) --- */
     :root{
-      --bg-deep:#050a11; /* Deeper background base */
-      --card-bg-dark: rgba(255,255,255,0.04); 
-      --border: rgba(255,255,255,0.1); 
-      --accent:#3b82f6; /* Brighter, more vibrant blue */
-      --accent2:#0a66ff;
-      --text-light:#eef2ff; /* Very light text for better contrast */
-      --text-dark:#111827; /* No longer used for feature cards */
+      --bg-deep:#070a13; /* Very deep, near-black obsidian background */
+      --card-bg-dark: rgba(255,255,255,0.06); /* Slightly more visible card background */
+      --border: rgba(0, 184, 255, 0.2); /* Neon cyan border for glow effect */
+      --accent:#00b8ff; /* Sharp Neon Cyan */
+      --accent2:#0088ff; /* Slightly deeper blue for gradient */
+      --text-light:#f8fafc; /* Pure white/lightest gray for contrast */
       --text-muted:#94a3b8;
       --radius:12px;
       --container:1100px;
@@ -39,55 +37,62 @@
     html,body{height:100%;margin:0}
     body{
       font-family:'Inter',system-ui,Roboto,Arial;
-      /* Subtle background gradient for depth */
-      background:linear-gradient(180deg, var(--bg-deep) 0%, #081320 60%);
+      /* Deep background gradient */
+      background:linear-gradient(180deg, var(--bg-deep) 0%, #101525 100%);
       color:var(--text-light);
       -webkit-font-smoothing:antialiased;
       line-height: 1.6;
     }
     .wrap{max-width:var(--container);margin:60px auto;padding:28px;}
     
-    /* Hero Section Styling - Added subtle glow */
+    /* Hero Section Styling - High-tech look */
     .hero{
       background:var(--card-bg-dark);
       border-radius:var(--radius);
       padding:36px;
-      box-shadow:0 25px 50px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.08); /* Double shadow for premium depth */
+      box-shadow:0 0 40px rgba(0, 184, 255, 0.2), 0 0 0 1px rgba(0, 184, 255, 0.3); /* Stronger neon glow */
       backdrop-filter:blur(12px);
       border: 1px solid var(--border);
-      transition: transform 0.3s ease;
+      transition: all 0.3s ease;
     }
     .hero:hover {
       transform: translateY(-3px);
+      box-shadow:0 0 50px rgba(0, 184, 255, 0.4), 0 0 0 1px rgba(0, 184, 255, 0.4);
     }
     .brand{display:flex;align-items:center;gap:24px;}
     
-    /* LOGO - Updated to dark background for a consistent crypto aesthetic */
+    /* LOGO - Dark and glowing */
     .logo{
       width:88px;
       height:88px;
       border-radius:14px;
       padding:8px;
-      background:rgba(255,255,255,0.08); /* Dark card background for the logo container */
-      border: 1px solid rgba(255,255,255,0.1); /* Subtle outline */
+      background:var(--bg-deep); 
+      border: 1px solid var(--border); 
       display:block;
-      box-shadow:0 0 20px rgba(59, 130, 246, 0.15); /* Subtle blue glow */
+      box-shadow:0 0 15px rgba(0, 184, 255, 0.5); 
     }
     
-    h1{margin:0;font-size:36px;color:#f8fafc;letter-spacing: -0.8px; font-weight: 700;}
+    h1{margin:0;font-size:36px;color:var(--text-light);letter-spacing: -0.8px; font-weight: 700;}
     .lead{margin-top:10px;color:var(--text-muted);font-size:17px;max-width:70ch;}
     
-    /* KPI Grid */
+    /* KPI Grid - Highlighted data */
     .kpis{
       display:grid;
       grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
       gap: 20px;
       margin-top: 30px;
-      border-top: 1px solid rgba(255,255,255,0.15);
+      border-top: 1px solid rgba(0, 184, 255, 0.15); /* Neon divider */
       padding-top: 24px;
     }
     .kpi{color:var(--text-muted); font-size: 15px;}
-    .kpi strong{display:block;font-size:26px;color:#fff;margin-bottom: 2px;}
+    .kpi strong{
+      display:block;
+      font-size:26px;
+      color:var(--accent); /* Data in neon cyan */
+      text-shadow: 0 0 5px rgba(0, 184, 255, 0.5); /* Subtle data glow */
+      margin-bottom: 2px;
+    }
 
     /* Button Styling */
     .btn, .ghost {
@@ -99,43 +104,43 @@
     }
     .btn{
       background:linear-gradient(90deg,var(--accent),var(--accent2));
-      color:#fff;
-      box-shadow:0 8px 20px rgba(9,30,66,0.5);
+      color:#111827; /* Dark text on bright button */
+      box-shadow:0 8px 20px rgba(0, 184, 255, 0.5);
     }
     .ghost{
       background:transparent;
-      border:1px solid rgba(255,255,255,0.3);
-      color:var(--text-light);
+      border:1px solid var(--accent);
+      color:var(--accent);
     }
-    .btn:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(9,30,66,0.6); }
-    .ghost:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.5); }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(0, 184, 255, 0.6); }
+    .ghost:hover { background: rgba(0, 184, 255, 0.1); border-color: var(--accent); color: var(--text-light); }
 
-    /* Card Styling */
-    .card{
+    /* Card Styling - All cards use the new dark/neon style */
+    .card, .card--feature{
       padding:28px;
       border-radius:var(--radius);
       background:var(--card-bg-dark);
-      box-shadow:0 8px 30px rgba(0,0,0,0.4);
-      border: 1px solid var(--border);
+      box-shadow:0 0 15px rgba(0, 184, 255, 0.1); /* Subtle neon glow on all cards */
+      border: 1px solid rgba(0, 184, 255, 0.15); /* Light neon border */
+      transition: box-shadow 0.3s ease;
     }
-    /* FEATURE CARD: Now matches main card background to remove light elements */
-    .card--feature{
-      background:var(--card-bg-dark); /* Using the darkest card background (rgba(255,255,255,0.04)) */
-      color:var(--text-light); /* Light text on dark background */
-      padding:28px;
-      border-radius:var(--radius);
-      box-shadow:0 8px 30px rgba(0,0,0,0.4); /* Consistent dark shadow */
-      border: 1px solid var(--border); /* Light border for definition */
+    .card:hover, .card--feature:hover {
+      box-shadow:0 0 25px rgba(0, 184, 255, 0.3);
     }
-    .card h3 { color: #fff; margin-top: 0; font-size: 22px; font-weight: 700; }
-    .card--feature h3 { color: #fff; margin-top: 0; font-size: 22px; font-weight: 700; } /* Set heading text to white */
+    .card h3, .card--feature h3 { color: var(--text-light); margin-top: 0; font-size: 22px; font-weight: 700; } 
     
     /* Link Styling */
-    .card a { color: var(--accent); text-decoration: none; border-bottom: 1px dashed rgba(59, 130, 246, 0.4); }
-    .card a:hover { border-bottom-style: solid; color: #fff; }
-    /* Feature card links now use dark theme styling */
-    .card--feature a { color: var(--accent); text-decoration: none; border-bottom: 1px dashed rgba(59, 130, 246, 0.4); }
-    .card--feature a:hover { border-bottom-style: solid; color: #fff; }
+    .card a, .card--feature a { 
+      color: var(--accent); 
+      text-decoration: none; 
+      border-bottom: 1px dashed rgba(0, 184, 255, 0.4); 
+      transition: all 0.2s;
+    }
+    .card a:hover, .card--feature a:hover { 
+      border-bottom-style: solid; 
+      color: var(--text-light); 
+      text-shadow: 0 0 8px rgba(0, 184, 255, 0.4); 
+    }
     
     /* Roadmap List Styling for Professional Look */
     .roadmap-list {
@@ -150,10 +155,10 @@
       margin-bottom: 12px;
     }
     .roadmap-list li:before {
-      content: '•'; /* Unicode bullet for simplicity */
+      content: '•'; 
       position: absolute;
       left: 0;
-      color: var(--accent);
+      color: var(--accent); /* Neon bullet */
       font-size: 1.2em;
       line-height: 1.0;
     }
@@ -164,7 +169,15 @@
     
     /* Footer */
     footer{margin-top:50px;text-align:center;color:var(--text-muted);font-size:14px;}
-    code{background:rgba(255,255,255,0.1);padding:4px 8px;border-radius:4px;color:#dbeafe;font-weight:600;font-size:13px;}
+    code{
+      background:rgba(0, 184, 255, 0.1);
+      padding:4px 8px;
+      border-radius:4px;
+      color:var(--accent);
+      font-weight:600;
+      font-size:13px;
+      border: 1px solid rgba(0, 184, 255, 0.3);
+    }
 
     /* Responsive Adjustments */
     @media(max-width:600px) {
