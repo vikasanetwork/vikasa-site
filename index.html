@@ -26,12 +26,11 @@
     :root{
       --bg-deep:#050a11; /* Deeper background base */
       --card-bg-dark: rgba(255,255,255,0.04); 
-      --card-bg-light: #ffffff; /* Lighter, cleaner card contrast - Changed to Pure White */
       --border: rgba(255,255,255,0.1); 
       --accent:#3b82f6; /* Brighter, more vibrant blue */
       --accent2:#0a66ff;
       --text-light:#eef2ff; /* Very light text for better contrast */
-      --text-dark:#111827;
+      --text-dark:#111827; /* No longer used for feature cards */
       --text-muted:#94a3b8;
       --radius:12px;
       --container:1100px;
@@ -62,7 +61,19 @@
       transform: translateY(-3px);
     }
     .brand{display:flex;align-items:center;gap:24px;}
-    .logo{width:88px;height:88px;border-radius:14px;padding:8px;background:#fff;display:block;box-shadow:0 10px 25px rgba(2,6,23,0.4);}
+    
+    /* LOGO - Updated to dark background for a consistent crypto aesthetic */
+    .logo{
+      width:88px;
+      height:88px;
+      border-radius:14px;
+      padding:8px;
+      background:rgba(255,255,255,0.08); /* Dark card background for the logo container */
+      border: 1px solid rgba(255,255,255,0.1); /* Subtle outline */
+      display:block;
+      box-shadow:0 0 20px rgba(59, 130, 246, 0.15); /* Subtle blue glow */
+    }
+    
     h1{margin:0;font-size:36px;color:#f8fafc;letter-spacing: -0.8px; font-weight: 700;}
     .lead{margin-top:10px;color:var(--text-muted);font-size:17px;max-width:70ch;}
     
@@ -107,23 +118,24 @@
       box-shadow:0 8px 30px rgba(0,0,0,0.4);
       border: 1px solid var(--border);
     }
+    /* FEATURE CARD: Now matches main card background to remove light elements */
     .card--feature{
-      background:var(--card-bg-light);
-      color:var(--text-dark);
+      background:var(--card-bg-dark); /* Using the darkest card background (rgba(255,255,255,0.04)) */
+      color:var(--text-light); /* Light text on dark background */
       padding:28px;
       border-radius:var(--radius);
-      /* Refined shadow for crispness and depth */
-      box-shadow:0 15px 40px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.05); 
-      border: 1px solid rgba(0,0,0,0.04); /* Added faint border for definition */
+      box-shadow:0 8px 30px rgba(0,0,0,0.4); /* Consistent dark shadow */
+      border: 1px solid var(--border); /* Light border for definition */
     }
     .card h3 { color: #fff; margin-top: 0; font-size: 22px; font-weight: 700; }
-    .card--feature h3 { color: var(--text-dark); margin-top: 0; font-size: 22px; font-weight: 700; }
+    .card--feature h3 { color: #fff; margin-top: 0; font-size: 22px; font-weight: 700; } /* Set heading text to white */
     
     /* Link Styling */
     .card a { color: var(--accent); text-decoration: none; border-bottom: 1px dashed rgba(59, 130, 246, 0.4); }
     .card a:hover { border-bottom-style: solid; color: #fff; }
-    .card--feature a { color: var(--accent); text-decoration: none; border-bottom: 1px dashed var(--accent); }
-    .card--feature a:hover { border-bottom-style: solid; }
+    /* Feature card links now use dark theme styling */
+    .card--feature a { color: var(--accent); text-decoration: none; border-bottom: 1px dashed rgba(59, 130, 246, 0.4); }
+    .card--feature a:hover { border-bottom-style: solid; color: #fff; }
     
     /* Roadmap List Styling for Professional Look */
     .roadmap-list {
@@ -200,12 +212,12 @@
 
         <div class="card--feature">
           <h3>Roadmap</h3>
-          <ul class="roadmap-list" style="color:var(--text-dark)">
+          <ul class="roadmap-list">
             <li><strong>2025: Q4 Launch</strong> — Token verification and official logo update on PolygonScan.</li>
             <li><strong>2025: Ecosystem App</strong> — Launch of the **Vikasa Ecosystem App** for users — staking, tracking, and rewards dashboard.</li>
             <li><strong>2026: Liquidity & Stability</strong> — Liquidity addition and **2-year lock** for stability and transparency.</li>
             <li><strong>2026: Major Tracking</strong> — Integration and listing on **CoinGecko** and **CoinMarketCap**.</li>
-            <li><strong>2026: Exchange Expansion</strong> — Initial listings on selected **small exchanges** to expand accessibility.</li>
+            <li><strong>2026: Exchange Expansion** — Initial listings on selected **small exchanges** to expand accessibility.</li>
           </ul>
         </div>
       </section>
