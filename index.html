@@ -27,7 +27,7 @@
       --accent:#0a66ff;
       --accent2:#00a2ff;
       --muted:#8c93a5;
-      --glass:rgba(255,255,255,0.06); /* Re-added glass effect variable */
+      --glass:rgba(255,255,255,0.06); 
       --radius:14px;
       --container:1100px;
       color-scheme:dark;
@@ -39,29 +39,27 @@
       color:#e6eef8;
       -webkit-font-smoothing:antialiased;
     }
-    .wrap{max-width:var(--container);margin:80px auto;padding:80px;}
-    /* Added back top grid layout for Hero + Token Details */
-    .top{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin-bottom:20px;}
-    @media(max-width:920px){.top{grid-template-columns:1fr}}
-    /* Adjusted for mobile: full width padding */
+    .wrap{max-width:var(--container);margin:40px auto;padding:28px;}
+    .top{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-bottom:20px;}
+    @media(max-width:1920px){.top{grid-template-columns:1fr}}
     @media(max-width:600px){.wrap{padding:80px;margin:80px auto;}}
 
     .hero{
-      background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02)); /* Used gradient for consistency */
+      background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02)); 
       border-radius:var(--radius);
-      padding:28px;
-      box-shadow:0 30px 60px rgba(2,6,23,0.6);
+      padding:50px;
+      box-shadow:0 100px 60px rgba(2,6,23,0.6);
       backdrop-filter:blur(6px);
     }
     .brand{display:flex;align-items:center;gap:18px;}
-    .logo{width:84px;height:84px;border-radius:12px;padding:8px;background:#fff;display:block;box-shadow:0 12px 30px rgba(2,6,23,0.6);}
+    .logo{width:184px;height:184px;border-radius:12px;padding:8px;background:#fff;display:block;box-shadow:0 12px 30px rgba(2,6,23,0.6);}
     h1{margin:0;font-size:28px;color:#f8fafc;}
-    .lead{margin-top:8px;color:var(--muted);font-size:15px;max-width:62ch;}
+    .lead{margin-top:8px;color:var(--muted);font-size:15px;max-width:162ch;}
     .kpis{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap;}
     .kpi{background:linear-gradient(90deg,var(--glass),rgba(255,255,255,0.02));padding:12px 14px;border-radius:10px;color:#cfe9ff;}
     .kpi strong{display:block;font-size:18px;color:#fff;}
 
-    .card{ /* Restored card background gradient */
+    .card{ 
       padding:20px;
       border-radius:12px;
       background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02));
@@ -71,12 +69,22 @@
     .card--white{background:#fff;color:#041029;padding:22px;border-radius:12px;}
     .card--white h3{color:#041029;}
 
-    /* Token Details DL styles (restored) */
-    dl{display:grid;grid-template-columns:120px 1fr;gap:8px 12px;}
-    dt{color:var(--muted);font-weight:600;}
+    /* Alignment Fix for Token Details Card */
+    dl{
+      display:grid;
+      grid-template-columns:220px 1fr;
+      gap:12px 12px;
+      align-items: center; 
+    }
+    dt{
+        color:var(--muted);
+        font-weight:600;
+        /* FIX: Align text to the right for better separation from values */
+        text-align: right; 
+    }
     dd{margin:0;color:#dbeafe;}
 
-    /* Contract Address Copy Styling (restored) */
+    /* Contract Address Copy Styling */
     .contract-dd{
       display:flex;
       gap:8px;
@@ -87,6 +95,7 @@
       overflow: hidden;
       text-overflow: ellipsis;
       max-width: calc(100% - 50px);
+      color:#dbeafe; 
     }
     #copyBtn {
       background: var(--glass);
@@ -154,14 +163,14 @@
             </div>
           </div>
         </div>
-        <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+        <div style="margin-top:50px;display:flex;gap:25px;flex-wrap:wrap;align-items:center">
           <a class="btn" href="https://polygonscan.com/address/0x44567A370C556785666824D29aB7553C61cac881" target="_blank">View on PolygonScan</a>
           <a class="ghost" href="/whitepaper.pdf" target="_blank">Read Whitepaper (PDF)</a>
           <span style="margin-left:auto;color:var(--muted);font-size:13px">Published <comment-tag id="2"><comment-tag id="4">Oct 2025</comment-tag id="4"></comment-tag id="2"></span>
         </div>
       </section>
 
-      <!-- Token Details Card (Restored) -->
+      <!-- Token Details Card -->
       <aside class="card">
         <h3>Token Details</h3>
         <dl>
@@ -206,7 +215,6 @@
         <div class="card">
           <h3>Founder</h3>
           <div class="founder">
-            <!-- Founder name now links directly to LinkedIn -->
             <a href="https://www.linkedin.com/in/vijaydnrao" target="_blank"><strong>Vijay DN</strong></a>
             <p class="small">Official social: <a class="link" href="https://x.com/VikasaNetwork" target="_blank">@VikasaNetwork</a></p>
           </div>
