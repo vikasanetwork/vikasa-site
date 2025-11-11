@@ -92,17 +92,17 @@
     .small { font-size:13px; color:var(--muted); }
   </style>
 </head>
+
 <body>
   <header class="nav" role="navigation" aria-label="Primary navigation">
     <div class="container nav__row">
       <a class="brand" href="/">
         <img class="logo" src="/logo-512.png" alt="Vikasa logo" />
         <div>
-          <div class="title">VIKASA NETWORK <span style="font-weight:600;font-size:13px;margin-left:8px" class="chip">VIK</span></div>
+          <div class="title">VIKASA NETWORK <span class="chip" style="font-weight:600;font-size:13px;margin-left:8px">VIK</span></div>
           <div class="small">Decentralized Rewards on Polygon (PoS)</div>
         </div>
       </a>
-
       <nav class="links" aria-label="Site navigation">
         <a href="#mission">Mission</a>
         <a href="#roadmap">Roadmap</a>
@@ -119,152 +119,120 @@
       <div class="hero-grid">
         <img src="/logo-512.png" alt="Vikasa logo" width="96" height="96" style="border-radius:12px;border:2px solid var(--accent)" />
         <div>
-          <h1 id="hero-title">VIKASA NETWORK <small style="color:var(--accent);font-weight:700"> (VIK)</small></h1>
+          <h1 id="hero-title">VIKASA NETWORK <small style="color:var(--accent);font-weight:700">(VIK)</small></h1>
           <p class="lead">A decentralized rewards ecosystem built on Polygon (PoS), empowering communities through transparent staking, on-chain governance, and verifiable utility.</p>
-
           <div class="kpis" role="list" aria-label="Token facts">
-            <div class="kpi" role="listitem"><strong>24,000,000</strong><span style="display:block">Total Supply</span></div>
-            <div class="kpi" role="listitem"><strong>18</strong><span style="display:block">Decimals</span></div>
-            <div class="kpi" role="listitem"><strong>Polygon</strong><span style="display:block">Network</span></div>
+            <div class="kpi" role="listitem"><strong>24,000,000</strong><span>Total Supply</span></div>
+            <div class="kpi" role="listitem"><strong>18</strong><span>Decimals</span></div>
+            <div class="kpi" role="listitem"><strong>Polygon</strong><span>Network</span></div>
           </div>
-
           <div class="btns" style="margin-top:18px">
             <a class="btn" href="https://polygonscan.com/address/0x2921d67ac78ebda0020f952e51e931ed125e00c1#code" target="_blank" rel="noopener">View on PolygonScan</a>
             <a class="btn--ghost" href="/whitepaper.pdf" target="_blank" rel="noopener">Download Whitepaper</a>
           </div>
-
           <div style="margin-top:12px;color:var(--muted)" class="small">Updated: Oct 2025 • Founder: Vijay DN — <a href="https://www.linkedin.com/in/vijaydnrao" target="_blank" rel="noopener">LinkedIn</a></div>
         </div>
       </div>
     </section>
 
-    <!-- GRID: main + sidebar -->
+    <!-- Mission -->
     <div class="grid" role="region" aria-label="Main content">
-      <section class="card" id="mission" aria-labelledby="mission-title">
-        <h3 id="mission-title">Core Mission</h3>
-        <p>VIKASA NETWORK (VIK) is a community-driven token and rewards ecosystem designed to turn digital engagement into verified, long-term value. We prioritize transparency, open governance, and sustainable liquidity management to build a fair rewards platform on Polygon.</p>
-
-        <div style="margin-top:16px" class="verify" aria-hidden="false">
+      <section class="card" id="mission">
+        <h3>Core Mission</h3>
+        <p>VIKASA NETWORK (VIK) is a community-driven rewards token designed to turn digital engagement into verified, long-term value. We prioritize transparency, open governance, and sustainable liquidity to build a fair ecosystem on Polygon.</p>
+        <div class="verify">
           <strong>Contract:</strong> <code class="inline">0x2921D67Ac78EBDA0020F952e51e931ed125e00C1</code><br />
-          <strong>Verified Source:</strong> <a href="https://polygonscan.com/address/0x2921d67ac78ebda0020f952e51e931ed125e00c1#code" target="_blank" rel="noopener">Polygonscan (Exact Match)</a>
+          <strong>Verified Source:</strong> <a href="https://polygonscan.com/address/0x2921d67ac78ebda0020f952e51e931ed125e00c1#code" target="_blank">PolygonScan (Exact Match)</a>
         </div>
-
         <h3 style="margin-top:18px">About</h3>
-        <p class="small">Vikasa will power staking, governance, and community incentives across apps in our ecosystem. Holders can stake to earn rewards, participate in governance votes, and access exclusive features in the Vikasa app (Q1 2026).</p>
-
-        <h3 style="margin-top:18px">Official Links</h3>
-        <div class="row socials" style="margin-top:8px">
-          <a href="https://x.com/VikasaNetwork" target="_blank" rel="noopener">X (Twitter)</a>
-          <a href="https://t.me/vikasanetwork" target="_blank" rel="noopener">Telegram</a>
-          <a href="https://www.linkedin.com/in/vijaydnrao" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
+        <p class="small">Vikasa powers staking, governance, and community incentives. Holders can stake, vote, and access exclusive features in the Vikasa App (Q1 2026).</p>
       </section>
 
-      <aside class="card" id="verify" aria-labelledby="verify-title">
-        <h3 id="verify-title">Verification & Proof</h3>
-
-        <p class="small">To prove ownership and authenticity we provide multiple public proofs:</p>
+      <aside class="card" id="verify">
+        <h3>Verification & Proof</h3>
         <ul class="list" style="margin-top:8px">
-          <li><strong>Verified Contract:</strong> Polygonscan source verified (link above).</li>
-          <li><strong>Published Signature:</strong> PolygonScan signature ID: <a href="https://polygonscan.com/verifySig/6959" target="_blank" rel="noopener">#6959</a></li>
-          <li><strong>Ownership Page:</strong> <a href="https://polygonscan.com/token/0x2921d67ac78ebda0020f952e51e931ed125e00c1#code">/verify-polygonscan.html</a></li>
-          <li><strong>Contact Email:</strong> <a href="mailto:info@vikasanetwork.com">info@vikasanetwork.com</a></li>
+          <li><strong>Verified Contract:</strong> PolygonScan source verified.</li>
+          <li><strong>Published Signature:</strong> <a href="https://polygonscan.com/verifySig/6959" target="_blank">#6959 on PolygonScan</a></li>
+          <li><strong>Ownership Proof Page:</strong> <a href="https://www.vikasanetwork.com/verify-polygonscan.html" target="_blank">/verify-polygonscan.html</a></li>
+          <li><strong>Creation TX:</strong> <a href="https://polygonscan.com/tx/<YOUR_CREATION_TX>" target="_blank">View on PolygonScan</a></li>
+          <li><strong>Deployer Address:</strong> <code class="inline">0xED2884e3545307a8ef42E0539c316aEA86Cdc9EE</code></li>
         </ul>
-
-        <div style="margin-top:12px;padding:12px;background:rgba(255,211,77,0.03);border-radius:8px;border:1px solid rgba(255,211,77,0.04)">
-          <strong>Deployer:</strong><br />
-          <code class="inline">0xED2884e3545307a8ef42E0539c316aEA86Cdc9EE</code>
-        </div>
-
-        <h3 style="margin-top:16px">Quick Proof — Signature</h3>
-        <div style="font-size:14px;color:var(--muted)">
-          Message signed and verified on PolygonScan:<br />
-          <code class="inline">"Vikasa Network Ownership Verification — Contract: 0x2921... — Domain: https://www.vikasanetwork.com"</code>
-        </div>
       </aside>
     </div>
 
     <!-- Tokenomics -->
     <section style="max-width:var(--container);margin-top:28px">
-      <div class="card" id="tokenomics" aria-labelledby="tokenomics-title">
-        <h3 id="tokenomics-title">Tokenomics</h3>
-        <p class="small">Clear distribution and purpose of token supply. These values are editable — choose the final allocations before public announcements.</p>
-
+      <div class="card" id="tokenomics">
+        <h3>Tokenomics</h3>
+        <p class="small">Transparent distribution and token supply structure.</p>
         <div class="tokenomics" style="margin-top:12px">
           <div>
-            <h4 style="margin:0 0 8px;color:var(--accent)">Supply</h4>
-           <p><strong>Max Supply:</strong> 24,000,000 VIK</p>
+            <h4 style="color:var(--accent)">Supply</h4>
+            <p><strong>Max Supply:</strong> 24,000,000 VIK</p>
             <p><strong>Decimals:</strong> 18</p>
-            <p><strong>Initial Circulating Supply:</strong> 2,000,000 VIK (remaining tokens reserved for ecosystem growth & liquidity programs)</p>
+            <p><strong>Initial Circulating Supply:</strong> 2,000,000 VIK (remaining tokens reserved for ecosystem growth & liquidity)</p>
           </div>
-
           <div>
-            <h4 style="margin:0 0 8px;color:var(--accent)">Distribution (example)</h4>
-            <ul class="list" style="margin-top:8px">
-              <li><strong>40% Community & Ecosystem:</strong> Airdrops, incentives, rewards</li>
-              <li><strong>20% Team & Advisors (locked):</strong> Vesting schedule 2 years</li>
-              <li><strong>20% Liquidity & Reserves:</strong> For DEX liquidity (will be locked)</li>
-              <li><strong>10% Treasury / Operations:</strong> Product & growth</li>
+            <h4 style="color:var(--accent)">Distribution</h4>
+            <ul class="list">
+              <li><strong>40% Community & Ecosystem:</strong> Rewards & incentives</li>
+              <li><strong>20% Team & Advisors (Locked):</strong> 2-year vesting</li>
+              <li><strong>20% Liquidity & Reserves:</strong> Locked for DEX stability</li>
+              <li><strong>10% Treasury / Operations:</strong> Development & marketing</li>
               <li><strong>10% Strategic Partnerships:</strong> Integrations & listings</li>
             </ul>
           </div>
-        </div>
-
-        <div style="margin-top:18px;color:var(--muted)">
-          <strong>Note:</strong> Final distribution should be confirmed and published in the whitepaper before token sale or listing.
         </div>
       </div>
     </section>
 
     <!-- Roadmap -->
     <section style="max-width:var(--container);margin-top:28px">
-      <div class="card" id="roadmap" aria-labelledby="roadmap-title">
-        <h3 id="roadmap-title">Roadmap — Key Milestones</h3>
-        <ul class="list" style="margin-top:8px">
-          <li><strong>Q4 2025 — Verify & Launch:</strong> Contract verified on PolygonScan, website & logo updated across trackers.</li>
-          <li><strong>Q1 2026 — Ecosystem App (V1):</strong> Vikasa staking & rewards dashboard (mobile/web) launch for early users.</li>
-          <li><strong>Q2 2026 — Liquidity Commitment:</strong> Target $5,000 USDT LP added and locked for 2 years (public lock link).</li>
-          <li><strong>Q3 2026 — Listings & Integrations:</strong> Apply to CoinGecko/CoinMarketCap and select small exchanges (Gittous, others).</li>
-          <li><strong>Ongoing:</strong> Security audit, community governance, and partnerships.</li>
+      <div class="card" id="roadmap">
+        <h3>Roadmap — Key Milestones</h3>
+        <ul class="list">
+          <li><strong>Q4 2025 — Verify & Launch:</strong> Contract verified, site live.</li>
+          <li><strong>Q1 2026 — Ecosystem App:</strong> Staking & Rewards Dashboard V1.</li>
+          <li><strong>Q2 2026 — Liquidity:</strong> $5K USDT LP locked 2 years.</li>
+          <li><strong>Q3 2026 — Listings:</strong> CoinGecko, CoinMarketCap, Gittous.</li>
+          <li><strong>Ongoing:</strong> Audits, governance, partnerships.</li>
         </ul>
       </div>
     </section>
 
-    <!-- How to verify -->
+    <!-- How to Verify -->
     <section style="max-width:var(--container);margin-top:28px">
       <div class="card">
-        <h3>How to verify our token (for reviewers)</h3>
+        <h3>How to verify our token</h3>
         <ol style="color:var(--muted);padding-left:18px">
-          <li>Open PolygonScan contract: <a href="https://polygonscan.com/address/0x2921d67ac78ebda0020f952e51e931ed125e00c1#code" target="_blank" rel="noopener">View Contract</a></li>
-          <li>Check source verified (Exact Match) and creation TX to confirm deployer wallet.</li>
-          <li>Open verified signature: <a href="https://polygonscan.com/verifySig/6959" target="_blank" rel="noopener">Signature #6959</a></li>
-          <li>Open verify page on our site: <a href="https://polygonscan.com/token/0x2921d67ac78ebda0020f952e51e931ed125e00c1#code">/verify-polygonscan.html</a></li>
+          <li>Open PolygonScan Contract: <a href="https://polygonscan.com/address/0x2921d67ac78ebda0020f952e51e931ed125e00c1#code" target="_blank">View Contract</a></li>
+          <li>Check <a href="https://polygonscan.com/address/0x2921d67ac78ebda0020f952e51e931ed125e00c1#code" target="_blank">Source Verified (Exact Match)</a> and <a href="https://polygonscan.com/tx/<YOUR_CREATION_TX>" target="_blank">Creation TX</a> to confirm deployer wallet.</li>
+          <li>Open verified signature: <a href="https://polygonscan.com/verifySig/6959" target="_blank">Signature #6959</a></li>
+          <li>View our verification page: <a href="https://www.vikasanetwork.com/verify-polygonscan.html" target="_blank">verify-polygonscan.html</a></li>
         </ol>
       </div>
     </section>
 
-    <!-- Contact / CTA -->
+    <!-- Contact -->
     <section style="max-width:var(--container);margin-top:28px">
-      <div class="card" id="contact" aria-labelledby="contact-title">
-        <h3 id="contact-title">Contact & Community</h3>
+      <div class="card" id="contact">
+        <h3>Contact & Community</h3>
         <p class="small">For token updates, partnership inquiries, or verification requests please contact:</p>
         <p><strong>Vikasa Network</strong><br/>Email: <a href="mailto:info@vikasanetwork.com">info@vikasanetwork.com</a></p>
-
-        <div style="margin-top:14px" class="row socials">
-          <a href="https://x.com/VikasaNetwork" target="_blank" rel="noopener">X / Twitter</a>
-          <a href="https://t.me/vikasanetwork" target="_blank" rel="noopener">Telegram</a>
-          <a href="https://www.linkedin.com/in/vijaydnrao" target="_blank" rel="noopener">LinkedIn</a>
+        <div class="row socials">
+          <a href="https://x.com/VikasaNetwork" target="_blank">X / Twitter</a>
+          <a href="https://t.me/vikasanetwork" target="_blank">Telegram</a>
+          <a href="https://www.linkedin.com/in/vijaydnrao" target="_blank">LinkedIn</a>
         </div>
       </div>
     </section>
 
-    <footer aria-label="Site footer" style="margin-top:32px">
+    <footer style="margin-top:32px">
       <div style="max-width:var(--container);margin:0 auto;padding:12px;text-align:center">
         <p>© 2025 VIKASA NETWORK • Contract: <code class="inline">0x2921D67Ac78EBDA0020F952e51e931ed125e00C1</code></p>
-        <p class="small">Official website and token information provided by Vikasa Network. All content subject to updates. Contact: <a href="mailto:info@vikasanetwork.com">info@vikasanetwork.com</a></p>
+        <p class="small">Official website and token information provided by Vikasa Network. Content may update as roadmap progresses. Contact: <a href="mailto:info@vikasanetwork.com">info@vikasanetwork.com</a></p>
       </div>
     </footer>
-
   </main>
 </body>
 </html>
