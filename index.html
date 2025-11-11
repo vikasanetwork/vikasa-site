@@ -2,279 +2,263 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>VIKASA NETWORK (VIK) — Official</title>
   <meta name="description" content="VIKASA NETWORK (VIK) — A decentralized rewards ecosystem on Polygon PoS. Transparent tokenomics, staking, governance, and a clear roadmap for sustainable growth." />
   <link rel="canonical" href="https://www.vikasanetwork.com/" />
+  <link rel="icon" href="/logo-512.png" />
 
-  <!-- Open Graph / Twitter -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="VIKASA NETWORK (VIK) — Official" />
   <meta property="og:description" content="A decentralized rewards ecosystem on Polygon PoS with transparent staking, governance, and verifiable utility." />
-  <meta property="og:image" content="/logo-512.png" />
+  <meta property="og:image" content="https://www.vikasanetwork.com/logo-512.png" />
   <meta property="og:url" content="https://www.vikasanetwork.com/" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Favicon (optional) -->
-  <link rel="icon" type="image/png" href="/logo-512.png" />
-
-  <!-- JSON-LD (basic org) -->
+  <!-- JSON-LD (Organization + token) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Vikasa Network",
-    "url": "https://www.vikasanetwork.com/",
+    "url": "https://www.vikasanetwork.com",
     "logo": "https://www.vikasanetwork.com/logo-512.png",
     "sameAs": [
-      "https://x.com/VikasaNetwork/status/1987947266007855350?s=20",
+      "https://x.com/VikasaNetwork",
       "https://t.me/vikasanetwork",
       "https://www.linkedin.com/in/vijaydnrao"
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "email": "info@vikasanetwork.com",
+        "contactType": "customer support"
+      }
     ]
   }
   </script>
 
   <style>
-    /* ==========================
-       THEME (Premium Dark + Gold)
-       ========================== */
-    :root {
-      --bg: #0e0f10;            /* page background */
-      --bg-elev: #17181a;       /* cards/nav */
-      --text: #f5f6f7;          /* primary text */
-      --muted: #a9adb7;         /* secondary text */
-      --accent: #ffd34d;        /* gold */
-      --accent-2: #ffeb99;      /* hover gold */
-      --border: rgba(255, 211, 77, 0.18);
-      --ring: rgba(255, 211, 77, 0.45);
-      --radius: 12px;
-      --container: 1140px;
+    :root{
+      --bg:#0e0f10; --bg-elev:#17181a; --text:#f5f6f7; --muted:#a9adb7;
+      --accent:#ffd34d; --accent-2:#ffeb99; --radius:12px; --container:1140px;
       color-scheme: dark;
     }
-
-    /* Global reset & base */
-    *, *::before, *::after { box-sizing: border-box; }
-    html, body { height: 100%; }
-    body {
-      margin: 0;
-      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: radial-gradient(1200px 600px at 80% -10%, rgba(255, 211, 77, 0.08), transparent 60%),
-                  linear-gradient(180deg, #0b0c0d, var(--bg) 18%, #090a0a 100%);
-      color: var(--text);
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      line-height: 1.65;
-      letter-spacing: 0.1px;
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:radial-gradient(1200px 600px at 80% -10%, rgba(255,211,77,0.06),transparent 60%),
+                 linear-gradient(180deg,#0b0c0d,var(--bg) 18%,#090a0a 100%);
+      color:var(--text);-webkit-font-smoothing:antialiased;line-height:1.6;padding-bottom:40px;
     }
-
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { color: var(--accent-2); }
-    img { max-width: 100%; display: block; }
-
-    .container { max-width: var(--container); margin: 0 auto; padding: 24px; }
-
-    /* ==========================
-       ACCESSIBILITY & UX
-       ========================== */
-    :focus-visible {
-      outline: 2px solid var(--ring);
-      outline-offset: 2px;
-      border-radius: 6px;
-    }
-    @media (prefers-reduced-motion: reduce) {
-      * { animation: none !important; transition: none !important; }
-    }
-
-    /* ==========================
-       TOP NAV
-       ========================== */
-    .nav {
-      position: sticky; top: 0; z-index: 20;
-      backdrop-filter: blur(8px);
-      background: rgba(11, 12, 13, 0.55);
-      border-bottom: 1px solid rgba(255, 211, 77, 0.08);
-    }
-    .nav__row {
-      display: flex; align-items: center; justify-content: space-between;
-      gap: 16px; padding: 12px 24px;
-    }
-    .nav__brand { display: flex; align-items: center; gap: 12px; }
-    .nav__logo { width: 36px; height: 36px; border-radius: 8px; border: 1.5px solid var(--accent); background: #0b0c0d; }
-    .nav__title { font-weight: 800; letter-spacing: -0.3px; }
-    .nav__links { display: flex; gap: 18px; align-items: center; }
-    .nav__link { color: var(--muted); font-weight: 600; font-size: 14px; }
-    .nav__link:hover { color: var(--text); }
-
-    /* ==========================
-       HERO
-       ========================== */
-    .hero {
-      margin-top: 28px;
-      background: linear-gradient(160deg, rgba(255, 211, 77, 0.06), rgba(255, 211, 77, 0) 40%), var(--bg-elev);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: 0 18px 60px rgba(0,0,0,0.55);
-      padding: 36px;
-      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-    }
-    .hero:hover { transform: translateY(-2px); border-color: rgba(255, 211, 77, 0.32); }
-
-    .hero__head { display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: start; }
-    .hero__logo { width: 74px; height: 74px; border-radius: 12px; border: 2px solid var(--accent); background: #0b0c0d; }
-    .hero h1 { margin: 0; font-size: clamp(30px, 4.4vw, 44px); letter-spacing: -0.6px; font-weight: 800; }
-    .hero small { font-weight: 700; color: var(--accent); font-size: 18px; }
-    .lead { margin-top: 10px; color: var(--muted); max-width: 76ch; }
-
-    .hero__bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; padding-top: 24px; margin-top: 22px; border-top: 1px solid rgba(255, 211, 77, 0.12); }
-
-    .kpis { display: flex; gap: clamp(18px, 4vw, 44px); flex-wrap: wrap; }
-    .kpi { color: var(--muted); font-size: 14px; font-weight: 600; }
-    .kpi strong { display: block; font-size: clamp(22px, 3.6vw, 32px); color: var(--accent); margin-bottom: 2px; font-weight: 800; letter-spacing: -0.2px; }
-
-    .btns { display: flex; gap: 12px; }
-    .btn, .btn--ghost {
-      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-      padding: 14px 22px; border-radius: 10px; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.6px;
-      transition: transform .15s ease, box-shadow .2s ease, background .2s ease, color .2s ease, border-color .2s ease;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
-      border: 1px solid transparent;
-    }
-    .btn { background: linear-gradient(90deg, #ffd34d, #c59a16); color: #121212; }
-    .btn:hover { transform: translateY(-1px); box-shadow: 0 10px 26px rgba(255, 211, 77, 0.45); }
-    .btn--ghost { background: transparent; border-color: var(--accent); color: var(--accent); }
-    .btn--ghost:hover { border-color: var(--accent-2); color: var(--accent-2); background: rgba(255, 211, 77, 0.08); }
-
-    .stamp { display: block; text-align: right; color: var(--muted); font-size: 13px; margin-top: 16px; }
-
-    /* ==========================
-       MAIN LAYOUT
-       ========================== */
-    .grid {
-      display: grid; gap: 28px; margin-top: 36px;
-      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
-    }
-    @media (max-width: 980px) { .grid { grid-template-columns: 1fr; } }
-
-    .card {
-      background: var(--bg-elev);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 26px 26px 28px;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.35);
-      transition: border-color .25s ease, box-shadow .25s ease, transform .25s ease;
-    }
-    .card:hover { border-color: rgba(255, 211, 77, 0.28); box-shadow: 0 16px 36px rgba(0,0,0,0.45); }
-
-    .card h3 { margin: 0 0 14px; color: var(--accent); font-size: clamp(20px, 2.6vw, 26px); font-weight: 800; padding-bottom: 12px; border-bottom: 1px solid rgba(255, 211, 77, 0.12); }
-    .card p { color: var(--muted); }
-
-    /* List bullets (clean) */
-    .list { list-style: none; padding: 0; margin: 0; }
-    .list li { position: relative; padding-left: 24px; margin: 12px 0; color: var(--muted); }
-    .list li strong { color: var(--text); font-weight: 700; }
-    .list li::before { content: "•"; position: absolute; left: 0; top: 0; color: var(--accent); font-weight: 900; }
-
-    /* Footer */
-    footer { margin: 56px 0 24px; color: var(--muted); font-size: 14px; text-align: center; }
-    code { background: rgba(255, 211, 77, 0.08); border: 1px solid rgba(255, 211, 77, 0.20); color: var(--accent); padding: 3px 7px; border-radius: 6px; font-weight: 700; font-size: 13px; }
-
-    /* Utility chips */
-    .chip { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; background: rgba(255, 211, 77, 0.08); border: 1px solid var(--border); border-radius: 999px; font-weight: 700; font-size: 12px; color: var(--accent); }
-
-    /* Small helper for external link icon (pure CSS arrow) */
-    .ext::after { content: "↗"; display: inline-block; margin-left: 6px; font-size: 12px; opacity: .8; }
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:var(--container);margin:0 auto;padding:24px}
+    header.nav{position:sticky;top:0;z-index:20;background:rgba(11,12,13,0.5);backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,211,77,0.06)}
+    .nav__row{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;gap:16px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:40px;height:40px;border-radius:10px;border:2px solid var(--accent);background:#0b0c0d;object-fit:cover}
+    .title{font-weight:800}
+    nav.links{display:flex;gap:18px;align-items:center}
+    nav.links a{color:var(--muted);font-weight:600;font-size:14px}
+    nav.links a:hover{color:var(--text)}
+    .hero{margin-top:28px;background:linear-gradient(160deg, rgba(255,211,77,0.06), rgba(255,211,77,0)),var(--bg-elev);
+      border:1px solid rgba(255,211,77,0.08);border-radius:var(--radius);padding:36px;box-shadow:0 20px 60px rgba(0,0,0,0.5)}
+    .hero-grid{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start}
+    .hero h1{margin:0;font-size:clamp(28px,4.2vw,44px);letter-spacing:-0.6px}
+    .lead{margin-top:10px;color:var(--muted);max-width:72ch}
+    .kpis{display:flex;gap:24px;margin-top:18px}
+    .kpi{color:var(--muted);font-weight:600}
+    .kpi strong{display:block;color:var(--accent);font-weight:800;font-size:22px}
+    .btns{display:flex;gap:12px;margin-top:10px}
+    .btn{background:linear-gradient(90deg,#ffd34d,#c59a16);color:#121212;padding:12px 18px;border-radius:10px;font-weight:800;letter-spacing:0.6px}
+    .btn--ghost{background:transparent;border:1px solid rgba(255,211,77,0.08);color:var(--accent);padding:10px 16px;border-radius:10px;font-weight:700}
+    .grid{display:grid;grid-template-columns:1.6fr 1fr;gap:28px;margin-top:36px}
+    @media(max-width:980px){.grid{grid-template-columns:1fr}}
+    .card{background:var(--bg-elev);border:1px solid rgba(255,211,77,0.06);border-radius:12px;padding:22px;box-shadow:0 12px 28px rgba(0,0,0,0.4)}
+    .card h3{margin:0 0 12px;color:var(--accent);font-weight:800}
+    .list{list-style:none;padding:0;margin:0}
+    .list li{padding:10px 0;border-bottom:1px dashed rgba(255,211,77,0.03);color:var(--muted)}
+    footer{margin:56px 0 24px;color:var(--muted);text-align:center;font-size:14px}
+    code.inline{background:rgba(255,211,77,0.06);padding:4px 8px;border-radius:6px;color:var(--accent);font-weight:700}
+    .chip{display:inline-flex;padding:8px 12px;border-radius:999px;background:rgba(255,211,77,0.06);color:var(--accent);font-weight:700}
+    .verify{background:linear-gradient(90deg, rgba(255,211,77,0.02), transparent);border-radius:10px;padding:12px;margin-top:12px;border:1px solid rgba(255,211,77,0.06)}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    .socials a{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;background:rgba(255,211,77,0.04);border:1px solid rgba(255,211,77,0.03)}
+    .tokenomics{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media(max-width:720px){.tokenomics{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <!-- ==========================
-       NAVBAR
-       ========================== -->
-  <header class="nav" role="navigation" aria-label="Primary">
+  <header class="nav" role="navigation">
     <div class="container nav__row">
-      <a class="nav__brand" href="#top">
-        <img class="nav__logo" src="/logo-512.png" alt="Vikasa logo" width="36" height="36" />
-        <span class="nav__title">VIKASA NETWORK <span class="chip">VIK</span></span>
+      <a class="brand" href="/">
+        <img class="logo" src="/logo-512.png" alt="Vikasa logo" />
+        <div>
+          <div class="title">VIKASA NETWORK <span style="font-weight:600;font-size:13px;margin-left:8px" class="chip">VIK</span></div>
+          <div style="font-size:12px;color:var(--muted)">Decentralized Rewards on Polygon (PoS)</div>
+        </div>
       </a>
-      <nav class="nav__links" aria-label="Site">
-        <a class="nav__link" href="#mission">Mission</a>
-        <a class="nav__link" href="#roadmap">Roadmap</a>
-        <a class="nav__link" href="#leadership">Leadership</a>
-        <a class="nav__link" href="#docs">Docs</a>
+
+      <nav class="links" aria-label="Primary">
+        <a href="#mission">Mission</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#tokenomics">Tokenomics</a>
+        <a href="#verify">Verify</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main id="top" class="container" role="main">
-    <!-- ==========================
-         HERO
-         ========================== -->
+  <main class="container" role="main">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero__head">
-        <img class="hero__logo" src="/logo-512.png" alt="Vikasa emblem" width="74" height="74" />
+      <div class="hero-grid">
+        <img src="/logo-512.png" alt="Vikasa logo" width="96" height="96" style="border-radius:12px;border:2px solid var(--accent)" />
         <div>
-          <h1 id="hero-title">VIKASA NETWORK <small>(VIK)</small></h1>
+          <h1 id="hero-title">VIKASA NETWORK <small style="color:var(--accent);font-weight:700"> (VIK)</small></h1>
           <p class="lead">A decentralized rewards ecosystem built on Polygon (PoS), empowering communities through transparent staking, on-chain governance, and verifiable utility.</p>
-        </div>
-      </div>
 
-      <div class="hero__bar">
-        <div class="kpis" role="list" aria-label="Token quick facts">
-          <div class="kpi" role="listitem"><strong>24,000,000</strong>Total Supply</div>
-          <div class="kpi" role="listitem"><strong>18</strong>Decimals</div>
-          <div class="kpi" role="listitem"><strong>Polygon</strong>Network</div>
-        </div>
-        <div class="btns" role="group" aria-label="Primary actions">
-          <a class="btn ext" href="https://polygonscan.com/address/0x2921d67ac78ebda0020f952e51e931ed125e00c1#code" target="_blank" rel="noopener">Verify Contract</a>
-          <a class="btn--ghost ext" href="/whitepaper.pdf" target="_blank" rel="noopener">Whitepaper</a>
+          <div class="kpis" role="list" aria-label="Token facts">
+            <div class="kpi" role="listitem"><strong>24,000,000</strong><span style="display:block">Total Supply</span></div>
+            <div class="kpi" role="listitem"><strong>18</strong><span style="display:block">Decimals</span></div>
+            <div class="kpi" role="listitem"><strong>Polygon</strong><span style="display:block">Network</span></div>
+          </div>
+
+          <div class="btns" style="margin-top:18px">
+            <a class="btn" href="https://polygonscan.com/address/0x2921d67ac78ebda0020f952e51e931ed125e00c1#code" target="_blank" rel="noopener">View on PolygonScan</a>
+            <a class="btn--ghost" href="/whitepaper.pdf" target="_blank" rel="noopener">Download Whitepaper</a>
+          </div>
+
+          <div style="margin-top:12px;color:var(--muted)">Updated: Oct 2025 • Founder: Vijay DN — <a href="https://www.linkedin.com/in/vijaydnrao" target="_blank" rel="noopener">LinkedIn</a></div>
         </div>
       </div>
-      <small class="stamp" aria-label="Last updated">Updated: Oct 2025</small>
     </section>
 
-    <!-- ==========================
-         CONTENT GRID
-         ========================== -->
     <div class="grid">
-      <section aria-labelledby="mission" class="card">
+      <section class="card" id="mission" aria-labelledby="mission">
         <h3 id="mission">Core Mission</h3>
-        <p>The VIKASA NETWORK token (VIK) powers a robust, community‑driven ecosystem. We prioritize <strong>decentralized governance</strong> and <strong>transparent utility</strong>, enabling token holders to vote on key proposals and benefit from real‑world integrations. Building on Polygon’s Proof‑of‑Stake network provides scalability, low fees, and strong security for all operations.</p>
+        <p>VIKASA NETWORK (VIK) is a community-driven token and rewards ecosystem designed to turn digital engagement into verified, long-term value. We prioritize transparency, open governance, and sustainable liquidity management to build a fair rewards platform on Polygon.</p>
+
+        <div style="margin-top:16px" class="verify">
+          <strong>Contract:</strong> <code class="inline">0x2921D67Ac78EBDA0020F952e51e931ed125e00C1</code><br />
+          <strong>Verified Source:</strong> <a href="https://polygonscan.com/address/0x2921d67ac78ebda0020f952e51e931ed125e00c1#code" target="_blank" rel="noopener">Polygonscan (Exact Match)</a>
+        </div>
+
+        <h3 style="margin-top:18px">About</h3>
+        <p style="color:var(--muted)">Vikasa will power staking, governance, and community incentives across apps in our ecosystem. Holders can stake to earn rewards, participate in governance votes, and access exclusive features in the Vikasa app (Q1 2026).</p>
+
+        <h3 style="margin-top:18px">Official Links</h3>
+        <div class="row socials" style="margin-top:8px">
+          <a href="https://x.com/VikasaNetwork" target="_blank" rel="noopener">X (Twitter)</a>
+          <a href="https://t.me/vikasanetwork" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://www.linkedin.com/in/vijaydnrao" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
       </section>
 
-      <aside class="card" aria-labelledby="leadership">
-        <h3 id="leadership">Executive Leadership</h3>
-        <p><strong>Vijay DN, Founder &amp; Lead Architect</strong><br />
-        Driving the technological vision and governance framework.</p>
-        <p>
-          <a class="ext" href="https://www.linkedin.com/in/vijaydnrao" target="_blank" rel="noopener">LinkedIn Profile</a><br />
-          <a class="ext" href="https://x.com/VikasaNetwork/status/1987947266007855350?s=20" target="_blank" rel="noopener">Official X Channel</a>
-        </p>
-      </aside>
+      <aside class="card" id="verify" aria-labelledby="verify">
+        <h3 id="verify">Verification & Proof</h3>
 
-      <section aria-labelledby="roadmap" class="card">
-        <h3 id="roadmap">Strategic Roadmap (Next 12–18 Months)</h3>
-        <ul class="list">
-          <li><strong>Q4 2025: Official Launch &amp; Auditing</strong> — Final contract verification, logo updates on major trackers, and initiation of an external security audit.</li>
-          <li><strong>Q1 2026: Ecosystem V1 Release</strong> — Launch of the <em>Vikasa Staking &amp; Rewards Dashboard</em> (Ecosystem App V1) with real‑time tracking and governance participation.</li>
-          <li><strong>Q2 2026: Liquidity Commitment</strong> — Strategic liquidity injection with a public two‑year lock to signal long‑term stability.</li>
-          <li><strong>Q3 2026: Major Platform Integration</strong> — Integration and comprehensive listing on key industry trackers including CoinGecko and CoinMarketCap.</li>
+        <p style="color:var(--muted)">To prove ownership and authenticity we provide multiple public proofs:</p>
+        <ul class="list" style="margin-top:8px">
+          <li><strong>Verified Contract:</strong> Polygonscan source verified (link above).</li>
+          <li><strong>Published Signature:</strong> PolygonScan signature ID: <a href="https://polygonscan.com/verifySig/6959" target="_blank" rel="noopener">#6959</a></li>
+          <li><strong>Ownership Page:</strong> <a href="/verify-polygonscan.html">https://www.vikasanetwork.com/verify-polygonscan.html</a></li>
+          <li><strong>Contact Email:</strong> <a href="mailto:info@vikasanetwork.com">info@vikasanetwork.com</a></li>
         </ul>
-      </section>
 
-      <aside class="card" aria-labelledby="docs">
-        <h3 id="docs">Documentation &amp; Assets</h3>
-        <ul class="list" style="margin-top: 6px;">
-          <li><a class="ext" href="/whitepaper.pdf" target="_blank" rel="noopener">Whitepaper (PDF, V1.2)</a></li>
-          <li><a class="ext" href="/logo-32.svg" target="_blank" rel="noopener">Official Logo (SVG)</a></li>
-          <li><a class="ext" href="https://t.me/vikasanetwork" target="_blank" rel="noopener">Telegram Community</a></li>
-        </ul>
+        <div style="margin-top:12px;padding:12px;background:rgba(255,211,77,0.03);border-radius:8px;border:1px solid rgba(255,211,77,0.04)">
+          <strong>Deployer:</strong><br />
+          <code class="inline">0xED2884e3545307a8ef42E0539c316aEA86Cdc9EE</code>
+        </div>
+
+        <h3 style="margin-top:16px">Quick Proof — Signature</h3>
+        <div style="font-size:14px;color:var(--muted)">
+          Message signed and verified on PolygonScan: <br />
+          <code class="inline">"Vikasa Network Ownership Verification — Contract: 0x2921... — Domain: https://www.vikasanetwork.com"</code>
+        </div>
       </aside>
     </div>
 
-    <footer role="contentinfo">
-      <p>© 2025 VIKASA NETWORK • Contract: <code>0x2921D67Ac78EBDA0020F952e51e931ed125e00C1</code></p>
+    <!-- Tokenomics -->
+    <section class="container" style="max-width:var(--container);margin-top:28px">
+      <div class="card" id="tokenomics" aria-labelledby="tokenomics">
+        <h3 id="tokenomics">Tokenomics</h3>
+        <p style="color:var(--muted)">Clear distribution and purpose of token supply. These values are editable — choose the final allocations before public announcements.</p>
+
+        <div class="tokenomics" style="margin-top:12px">
+          <div>
+            <h4 style="margin:0 0 8px;color:var(--accent)">Supply</h4>
+            <p style="margin:0 0 8px"><strong>Max Supply:</strong> 24,000,000 VIK</p>
+            <p style="margin:0 0 8px"><strong>Decimals:</strong> 18</p>
+            <p style="margin:0 0 8px"><strong>Initial Circulating:</strong> (edit) — e.g., 2,000,000 VIK</p>
+          </div>
+
+          <div>
+            <h4 style="margin:0 0 8px;color:var(--accent)">Distribution (example)</h4>
+            <ul class="list" style="margin-top:8px">
+              <li><strong>40% Community & Ecosystem:</strong> Airdrops, incentives, rewards</li>
+              <li><strong>20% Team & Advisors (locked):</strong> Vesting schedule 2 years</li>
+              <li><strong>20% Liquidity & Reserves:</strong> For DEX liquidity (will be locked)</li>
+              <li><strong>10% Treasury / Operations:</strong> Product & growth</li>
+              <li><strong>10% Strategic Partnerships:</strong> Integrations & listings</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="margin-top:18px;color:var(--muted)">
+          <strong>Note:</strong> Final distribution should be confirmed and published in the whitepaper before token sale or listing.
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section class="container" style="max-width:var(--container);margin-top:28px">
+      <div class="card" id="roadmap" aria-labelledby="roadmap">
+        <h3 id="roadmap">Roadmap — Key Milestones</h3>
+        <ul class="list" style="margin-top:8px">
+          <li><strong>Q4 2025 — Verify & Launch:</strong> Contract verified on PolygonScan, website & logo updated across trackers.</li>
+          <li><strong>Q1 2026 — Ecosystem App (V1):</strong> Vikasa staking & rewards dashboard (mobile/web) launch for early users.</li>
+          <li><strong>Q2 2026 — Liquidity Commitment:</strong> Target $5,000 USDT LP added and locked for 2 years (public lock link).</li>
+          <li><strong>Q3 2026 — Listings & Integrations:</strong> Apply to CoinGecko/CoinMarketCap and select small exchanges (Gittous, others).</li>
+          <li><strong>Ongoing:</strong> Security audit, community governance, and partnerships.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Governance / How to verify -->
+    <section class="container" style="max-width:var(--container);margin-top:28px">
+      <div class="card">
+        <h3>How to verify our token (for reviewers)</h3>
+        <ol style="color:var(--muted);padding-left:18px">
+          <li>Open PolygonScan contract: <a href="https://polygonscan.com/address/0x2921d67ac78ebda0020f952e51e931ed125e00c1" target="_blank" rel="noopener">View Contract</a></li>
+          <li>Check source verified (Exact Match) and creation TX to confirm deployer wallet.</li>
+          <li>Open verified signature: <a href="https://polygonscan.com/verifySig/6959" target="_blank" rel="noopener">Signature #6959</a></li>
+          <li>Open verify page on our site: <a href="/verify-polygonscan.html">/verify-polygonscan.html</a></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section class="container" style="max-width:var(--container);margin-top:28px">
+      <div class="card">
+        <h3 id="contact">Contact & Community</h3>
+        <p style="color:var(--muted)">For token updates, partnership inquiries, or verification requests please contact:</p>
+        <p><strong>Vikasa Network</strong><br/>Email: <a href="mailto:info@vikasanetwork.com">info@vikasanetwork.com</a></p>
+
+        <div style="margin-top:14px" class="row socials">
+          <a href="https://x.com/VikasaNetwork" target="_blank" rel="noopener">X / Twitter</a>
+          <a href="https://t.me/vikasanetwork" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://www.linkedin.com/in/vijaydnrao" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="max-width:var(--container);margin:0 auto;padding:12px">
+        <p>© 2025 VIKASA NETWORK • Contract: <code>0x2921D67Ac78EBDA0020F952e51e931ed125e00C1</code></p>
+        <p style="color:var(--muted);font-size:13px">Official website and token information provided by Vikasa Network. All content subject to updates. Contact: <a href="mailto:info@vikasanetwork.com">info@vikasanetwork.com</a></p>
+      </div>
     </footer>
   </main>
 </body>
