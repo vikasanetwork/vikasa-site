@@ -16,7 +16,7 @@
   <meta property="og:url" content="https://www.vikasanetwork.com/" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- JSON-LD (Organization + token) -->
+  <!-- JSON-LD (Organization) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -54,6 +54,7 @@
       color:var(--text);-webkit-font-smoothing:antialiased;line-height:1.6;padding-bottom:40px;
     }
     a{color:var(--accent);text-decoration:none}
+    a:hover{color:var(--accent-2)}
     .container{max-width:var(--container);margin:0 auto;padding:24px}
     header.nav{position:sticky;top:0;z-index:20;background:rgba(11,12,13,0.5);backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,211,77,0.06)}
     .nav__row{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;gap:16px}
@@ -88,20 +89,21 @@
     .socials a{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;background:rgba(255,211,77,0.04);border:1px solid rgba(255,211,77,0.03)}
     .tokenomics{display:grid;grid-template-columns:1fr 1fr;gap:16px}
     @media(max-width:720px){.tokenomics{grid-template-columns:1fr}}
+    .small { font-size:13px; color:var(--muted); }
   </style>
 </head>
 <body>
-  <header class="nav" role="navigation">
+  <header class="nav" role="navigation" aria-label="Primary navigation">
     <div class="container nav__row">
       <a class="brand" href="/">
         <img class="logo" src="/logo-512.png" alt="Vikasa logo" />
         <div>
           <div class="title">VIKASA NETWORK <span style="font-weight:600;font-size:13px;margin-left:8px" class="chip">VIK</span></div>
-          <div style="font-size:12px;color:var(--muted)">Decentralized Rewards on Polygon (PoS)</div>
+          <div class="small">Decentralized Rewards on Polygon (PoS)</div>
         </div>
       </a>
 
-      <nav class="links" aria-label="Primary">
+      <nav class="links" aria-label="Site navigation">
         <a href="#mission">Mission</a>
         <a href="#roadmap">Roadmap</a>
         <a href="#tokenomics">Tokenomics</a>
@@ -112,6 +114,7 @@
   </header>
 
   <main class="container" role="main">
+    <!-- HERO -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-grid">
         <img src="/logo-512.png" alt="Vikasa logo" width="96" height="96" style="border-radius:12px;border:2px solid var(--accent)" />
@@ -130,23 +133,24 @@
             <a class="btn--ghost" href="/whitepaper.pdf" target="_blank" rel="noopener">Download Whitepaper</a>
           </div>
 
-          <div style="margin-top:12px;color:var(--muted)">Updated: Oct 2025 • Founder: Vijay DN — <a href="https://www.linkedin.com/in/vijaydnrao" target="_blank" rel="noopener">LinkedIn</a></div>
+          <div style="margin-top:12px;color:var(--muted)" class="small">Updated: Oct 2025 • Founder: Vijay DN — <a href="https://www.linkedin.com/in/vijaydnrao" target="_blank" rel="noopener">LinkedIn</a></div>
         </div>
       </div>
     </section>
 
-    <div class="grid">
-      <section class="card" id="mission" aria-labelledby="mission">
-        <h3 id="mission">Core Mission</h3>
+    <!-- GRID: main + sidebar -->
+    <div class="grid" role="region" aria-label="Main content">
+      <section class="card" id="mission" aria-labelledby="mission-title">
+        <h3 id="mission-title">Core Mission</h3>
         <p>VIKASA NETWORK (VIK) is a community-driven token and rewards ecosystem designed to turn digital engagement into verified, long-term value. We prioritize transparency, open governance, and sustainable liquidity management to build a fair rewards platform on Polygon.</p>
 
-        <div style="margin-top:16px" class="verify">
+        <div style="margin-top:16px" class="verify" aria-hidden="false">
           <strong>Contract:</strong> <code class="inline">0x2921D67Ac78EBDA0020F952e51e931ed125e00C1</code><br />
           <strong>Verified Source:</strong> <a href="https://polygonscan.com/address/0x2921d67ac78ebda0020f952e51e931ed125e00c1#code" target="_blank" rel="noopener">Polygonscan (Exact Match)</a>
         </div>
 
         <h3 style="margin-top:18px">About</h3>
-        <p style="color:var(--muted)">Vikasa will power staking, governance, and community incentives across apps in our ecosystem. Holders can stake to earn rewards, participate in governance votes, and access exclusive features in the Vikasa app (Q1 2026).</p>
+        <p class="small">Vikasa will power staking, governance, and community incentives across apps in our ecosystem. Holders can stake to earn rewards, participate in governance votes, and access exclusive features in the Vikasa app (Q1 2026).</p>
 
         <h3 style="margin-top:18px">Official Links</h3>
         <div class="row socials" style="margin-top:8px">
@@ -156,14 +160,14 @@
         </div>
       </section>
 
-      <aside class="card" id="verify" aria-labelledby="verify">
-        <h3 id="verify">Verification & Proof</h3>
+      <aside class="card" id="verify" aria-labelledby="verify-title">
+        <h3 id="verify-title">Verification & Proof</h3>
 
-        <p style="color:var(--muted)">To prove ownership and authenticity we provide multiple public proofs:</p>
+        <p class="small">To prove ownership and authenticity we provide multiple public proofs:</p>
         <ul class="list" style="margin-top:8px">
           <li><strong>Verified Contract:</strong> Polygonscan source verified (link above).</li>
           <li><strong>Published Signature:</strong> PolygonScan signature ID: <a href="https://polygonscan.com/verifySig/6959" target="_blank" rel="noopener">#6959</a></li>
-          <li><strong>Ownership Page:</strong> <a href="/verify-polygonscan.html">https://polygonscan.com/verifySig/6959</a></li>
+          <li><strong>Ownership Page:</strong> <a href="/verify-polygonscan.html">/verify-polygonscan.html</a></li>
           <li><strong>Contact Email:</strong> <a href="mailto:info@vikasanetwork.com">info@vikasanetwork.com</a></li>
         </ul>
 
@@ -174,17 +178,17 @@
 
         <h3 style="margin-top:16px">Quick Proof — Signature</h3>
         <div style="font-size:14px;color:var(--muted)">
-          Message signed and verified on PolygonScan: <br />
+          Message signed and verified on PolygonScan:<br />
           <code class="inline">"Vikasa Network Ownership Verification — Contract: 0x2921... — Domain: https://www.vikasanetwork.com"</code>
         </div>
       </aside>
     </div>
 
     <!-- Tokenomics -->
-    <section class="container" style="max-width:var(--container);margin-top:28px">
-      <div class="card" id="tokenomics" aria-labelledby="tokenomics">
-        <h3 id="tokenomics">Tokenomics</h3>
-        <p style="color:var(--muted)">Clear distribution and purpose of token supply. These values are editable — choose the final allocations before public announcements.</p>
+    <section style="max-width:var(--container);margin-top:28px">
+      <div class="card" id="tokenomics" aria-labelledby="tokenomics-title">
+        <h3 id="tokenomics-title">Tokenomics</h3>
+        <p class="small">Clear distribution and purpose of token supply. These values are editable — choose the final allocations before public announcements.</p>
 
         <div class="tokenomics" style="margin-top:12px">
           <div>
@@ -213,9 +217,9 @@
     </section>
 
     <!-- Roadmap -->
-    <section class="container" style="max-width:var(--container);margin-top:28px">
-      <div class="card" id="roadmap" aria-labelledby="roadmap">
-        <h3 id="roadmap">Roadmap — Key Milestones</h3>
+    <section style="max-width:var(--container);margin-top:28px">
+      <div class="card" id="roadmap" aria-labelledby="roadmap-title">
+        <h3 id="roadmap-title">Roadmap — Key Milestones</h3>
         <ul class="list" style="margin-top:8px">
           <li><strong>Q4 2025 — Verify & Launch:</strong> Contract verified on PolygonScan, website & logo updated across trackers.</li>
           <li><strong>Q1 2026 — Ecosystem App (V1):</strong> Vikasa staking & rewards dashboard (mobile/web) launch for early users.</li>
@@ -226,8 +230,8 @@
       </div>
     </section>
 
-    <!-- Governance / How to verify -->
-    <section class="container" style="max-width:var(--container);margin-top:28px">
+    <!-- How to verify -->
+    <section style="max-width:var(--container);margin-top:28px">
       <div class="card">
         <h3>How to verify our token (for reviewers)</h3>
         <ol style="color:var(--muted);padding-left:18px">
@@ -240,10 +244,10 @@
     </section>
 
     <!-- Contact / CTA -->
-    <section class="container" style="max-width:var(--container);margin-top:28px">
-      <div class="card">
-        <h3 id="contact">Contact & Community</h3>
-        <p style="color:var(--muted)">For token updates, partnership inquiries, or verification requests please contact:</p>
+    <section style="max-width:var(--container);margin-top:28px">
+      <div class="card" id="contact" aria-labelledby="contact-title">
+        <h3 id="contact-title">Contact & Community</h3>
+        <p class="small">For token updates, partnership inquiries, or verification requests please contact:</p>
         <p><strong>Vikasa Network</strong><br/>Email: <a href="mailto:info@vikasanetwork.com">info@vikasanetwork.com</a></p>
 
         <div style="margin-top:14px" class="row socials">
@@ -254,12 +258,13 @@
       </div>
     </section>
 
-    <footer>
-      <div style="max-width:var(--container);margin:0 auto;padding:12px">
-        <p>© 2025 VIKASA NETWORK • Contract: <code>0x2921D67Ac78EBDA0020F952e51e931ed125e00C1</code></p>
-        <p style="color:var(--muted);font-size:13px">Official website and token information provided by Vikasa Network. All content subject to updates. Contact: <a href="mailto:info@vikasanetwork.com">info@vikasanetwork.com</a></p>
+    <footer aria-label="Site footer" style="margin-top:32px">
+      <div style="max-width:var(--container);margin:0 auto;padding:12px;text-align:center">
+        <p>© 2025 VIKASA NETWORK • Contract: <code class="inline">0x2921D67Ac78EBDA0020F952e51e931ed125e00C1</code></p>
+        <p class="small">Official website and token information provided by Vikasa Network. All content subject to updates. Contact: <a href="mailto:info@vikasanetwork.com">info@vikasanetwork.com</a></p>
       </div>
     </footer>
+
   </main>
 </body>
 </html>
